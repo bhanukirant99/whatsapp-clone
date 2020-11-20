@@ -25,7 +25,7 @@ function Chat() {
 
     useEffect(() => {
         setSeed(Math.floor(Math.random() * 5000))
-    }, []);
+    }, [roomId]);
 
     const sendMessage = (e) => {
         e.preventDefault();
@@ -75,4 +75,4 @@ function Chat() {
     )
 }
 
-export default Chat
+export default Chat;
